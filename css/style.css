@@ -1,0 +1,95 @@
+/* estilos generales para la pagina */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+/* estilos parabarra navegacion */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-verde);
+    z-index: 2;
+    
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid black;
+    padding: 10px;
+    position: sticky;
+    background-color: #053617;
+    
+}
+
+.nav-ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+
+.nav-ul > li:hover {
+    background-color: #c8ddcfd2;
+    border-radius: 10px;
+}
+
+.nav-ul > li {
+    list-style: none;
+}
+
+
+/* ------------------------------------------------SLIDER_-------------------------------- */
+
+.container_slider {
+    
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+    
+}
+
+.wrapper {
+      
+    max-width: 800px;
+    background-color: blue;
+}
+
+.container_slider i {
+    background-color: #fff;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    
+
+
+}
+
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    margin-left: 20px;
+    width: (100% / 3);
+    cursor: pointer;
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
